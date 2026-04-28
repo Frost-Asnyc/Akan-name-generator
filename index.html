@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Akan Name Generator</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Akan Name Generator</h1>
+        <p>
+          Discover your traditional Ghanaian-inspired name based on the day you were born
+        </p>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- INPUT CARD -->
+      <section class="card">
+        <form id="akanForm">
+
+          <section class="inputboxes">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="number" id="day" min="1" max="31" placeholder="DD" required>
+            <select id="month" required>
+              <option value="">Select month</option>
+              <option value="0">January</option>
+              <option value="1">February</option>
+              <option value="2">March</option>
+              <option value="3">April</option>
+              <option value="4">May</option>
+              <option value="5">June</option>
+              <option value="6">July</option>
+              <option value="7">August</option>
+              <option value="8">September</option>
+              <option value="9">October</option>
+              <option value="10">November</option>
+              <option value="11">December</option>
+            </select>
+            <input type="number" id="year" min="1900" max="2026" placeholder="YYYY" required>
+          </section>
+
+          <label for="gender">Select Gender</label>
+          <select id="gender" required>
+            <option value="">Choose Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <button type="submit">Generate Name</button>
+
+        </form>
+
+        <!-- RESULT -->
+        <div class="result">
+          <h2>Your Akan Name is:</h2>
+          <p id="result">""</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Akan Name Generator. All rights reserved by Lerionka Olentiki</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+  </body>
+</html>
